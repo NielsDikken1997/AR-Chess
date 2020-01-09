@@ -142,6 +142,26 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // U3CMODULEU3E_TBB5D6FDE6CBE0067E5DC774822D5054F01745F8C_H
+#ifndef U3CMODULEU3E_T6CDDDF959E7E18A6744E43B613F41CDAC780256A_H
+#define U3CMODULEU3E_T6CDDDF959E7E18A6744E43B613F41CDAC780256A_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// <Module>
+struct  U3CModuleU3E_t6CDDDF959E7E18A6744E43B613F41CDAC780256A 
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // U3CMODULEU3E_T6CDDDF959E7E18A6744E43B613F41CDAC780256A_H
 #ifndef RUNTIMEOBJECT_H
 #define RUNTIMEOBJECT_H
 #ifdef __clang__
@@ -2858,6 +2878,56 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // DEFAULTTRACKABLEEVENTHANDLER_T6997E0A19AC0FABC165FB7264F57DF2EDF4E8022_H
+#ifndef IMAGESOUNDEVENTHANDLER_T844982D6938B21C109DCD722715ACB7832991BCA_H
+#define IMAGESOUNDEVENTHANDLER_T844982D6938B21C109DCD722715ACB7832991BCA_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// ImageSoundEventHandler
+struct  ImageSoundEventHandler_t844982D6938B21C109DCD722715ACB7832991BCA  : public MonoBehaviour_t4A60845CF505405AF8BE8C61CC07F75CADEF6429
+{
+public:
+	// Vuforia.TrackableBehaviour ImageSoundEventHandler::mTrackableBehaviour
+	TrackableBehaviour_t579D75AAFEF7B2D69F4B68931D5A58074E80A7E4 * ___mTrackableBehaviour_4;
+	// Vuforia.TrackableBehaviour_Status ImageSoundEventHandler::m_PreviousStatus
+	int32_t ___m_PreviousStatus_5;
+	// Vuforia.TrackableBehaviour_Status ImageSoundEventHandler::m_NewStatus
+	int32_t ___m_NewStatus_6;
+
+public:
+	inline static int32_t get_offset_of_mTrackableBehaviour_4() { return static_cast<int32_t>(offsetof(ImageSoundEventHandler_t844982D6938B21C109DCD722715ACB7832991BCA, ___mTrackableBehaviour_4)); }
+	inline TrackableBehaviour_t579D75AAFEF7B2D69F4B68931D5A58074E80A7E4 * get_mTrackableBehaviour_4() const { return ___mTrackableBehaviour_4; }
+	inline TrackableBehaviour_t579D75AAFEF7B2D69F4B68931D5A58074E80A7E4 ** get_address_of_mTrackableBehaviour_4() { return &___mTrackableBehaviour_4; }
+	inline void set_mTrackableBehaviour_4(TrackableBehaviour_t579D75AAFEF7B2D69F4B68931D5A58074E80A7E4 * value)
+	{
+		___mTrackableBehaviour_4 = value;
+		Il2CppCodeGenWriteBarrier((&___mTrackableBehaviour_4), value);
+	}
+
+	inline static int32_t get_offset_of_m_PreviousStatus_5() { return static_cast<int32_t>(offsetof(ImageSoundEventHandler_t844982D6938B21C109DCD722715ACB7832991BCA, ___m_PreviousStatus_5)); }
+	inline int32_t get_m_PreviousStatus_5() const { return ___m_PreviousStatus_5; }
+	inline int32_t* get_address_of_m_PreviousStatus_5() { return &___m_PreviousStatus_5; }
+	inline void set_m_PreviousStatus_5(int32_t value)
+	{
+		___m_PreviousStatus_5 = value;
+	}
+
+	inline static int32_t get_offset_of_m_NewStatus_6() { return static_cast<int32_t>(offsetof(ImageSoundEventHandler_t844982D6938B21C109DCD722715ACB7832991BCA, ___m_NewStatus_6)); }
+	inline int32_t get_m_NewStatus_6() const { return ___m_NewStatus_6; }
+	inline int32_t* get_address_of_m_NewStatus_6() { return &___m_NewStatus_6; }
+	inline void set_m_NewStatus_6(int32_t value)
+	{
+		___m_NewStatus_6 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // IMAGESOUNDEVENTHANDLER_T844982D6938B21C109DCD722715ACB7832991BCA_H
 #ifndef VUFORIAMONOBEHAVIOUR_T806C61E721B78928AF6266F3AF838FA2CB56AB5D_H
 #define VUFORIAMONOBEHAVIOUR_T806C61E721B78928AF6266F3AF838FA2CB56AB5D_H
 #ifdef __clang__
@@ -3899,6 +3969,14 @@ extern const int32_t g_FieldOffsetTable2850[2] =
 	UnityRenderPipeline_t62C711062D224A17F999C0F58CDB6F6E641560A4::get_offset_of_BeginCameraRendering_1(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2851 = { sizeof (UnityAndroidPermissions_tA4CE60356A3424ECF5E1AB1F39264182BB49D7CF), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2852 = { sizeof (U3CModuleU3E_t6CDDDF959E7E18A6744E43B613F41CDAC780256A), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2853 = { sizeof (ImageSoundEventHandler_t844982D6938B21C109DCD722715ACB7832991BCA), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable2853[3] = 
+{
+	ImageSoundEventHandler_t844982D6938B21C109DCD722715ACB7832991BCA::get_offset_of_mTrackableBehaviour_4(),
+	ImageSoundEventHandler_t844982D6938B21C109DCD722715ACB7832991BCA::get_offset_of_m_PreviousStatus_5(),
+	ImageSoundEventHandler_t844982D6938B21C109DCD722715ACB7832991BCA::get_offset_of_m_NewStatus_6(),
+};
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

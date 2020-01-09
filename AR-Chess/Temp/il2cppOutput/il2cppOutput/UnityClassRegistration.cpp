@@ -154,7 +154,7 @@ class WindZone;
 namespace UI { class CanvasRenderer; } template <> void RegisterUnityClass<UI::CanvasRenderer>(const char*);
 class Collider; template <> void RegisterUnityClass<Collider>(const char*);
 class BoxCollider; template <> void RegisterUnityClass<BoxCollider>(const char*);
-class CapsuleCollider; 
+class CapsuleCollider; template <> void RegisterUnityClass<CapsuleCollider>(const char*);
 class CharacterController; 
 class MeshCollider; template <> void RegisterUnityClass<MeshCollider>(const char*);
 class SphereCollider; 
@@ -286,7 +286,7 @@ void RegisterAllClasses()
 {
 void RegisterBuiltinTypes();
 RegisterBuiltinTypes();
-	//Total: 71 non stripped classes
+	//Total: 72 non stripped classes
 	//0. Behaviour
 	RegisterUnityClass<Behaviour>("Core");
 	//1. Unity::Component
@@ -425,9 +425,11 @@ RegisterBuiltinTypes();
 	RegisterUnityClass<LightProbes>("Core");
 	//68. LightmapSettings
 	RegisterUnityClass<LightmapSettings>("Core");
-	//69. Light
+	//69. CapsuleCollider
+	RegisterUnityClass<CapsuleCollider>("Physics");
+	//70. Light
 	RegisterUnityClass<Light>("Core");
-	//70. RenderSettings
+	//71. RenderSettings
 	RegisterUnityClass<RenderSettings>("Core");
 
 }

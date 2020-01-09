@@ -166,6 +166,14 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_AudioSource_INTERNAL_CALL_ReadExtensionPropertyName();
 		Register_UnityEngine_AudioSource_INTERNAL_CALL_ReadExtensionPropertyName();
 
+		//System.Void UnityEngine.AudioSource::Play(System.UInt64)
+		void Register_UnityEngine_AudioSource_Play();
+		Register_UnityEngine_AudioSource_Play();
+
+		//System.Void UnityEngine.AudioSource::Stop()
+		void Register_UnityEngine_AudioSource_Stop();
+		Register_UnityEngine_AudioSource_Stop();
+
 		//UnityEngine.AudioClip UnityEngine.AudioSource::get_clip()
 		void Register_UnityEngine_AudioSource_get_clip();
 		Register_UnityEngine_AudioSource_get_clip();
