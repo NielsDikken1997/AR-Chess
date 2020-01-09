@@ -54,7 +54,6 @@ public class ImageSoundEventHandler : MonoBehaviour, ITrackableEventHandler
     {
         m_PreviousStatus = previousStatus;
         m_NewStatus = newStatus;
-        AudioSource[] sounds = GetComponentsInChildren<AudioSource>();
         
         Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + 
                   " " + mTrackableBehaviour.CurrentStatus +
@@ -65,12 +64,14 @@ public class ImageSoundEventHandler : MonoBehaviour, ITrackableEventHandler
             newStatus == TrackableBehaviour.Status.EXTENDED_TRACKED)
         {
             OnTrackingFound();
+            AudioSource[] sounds = GetComponentsInChildren<AudioSource>();
             sounds[0].Play();
         }
         else if (previousStatus == TrackableBehaviour.Status.TRACKED &&
                  newStatus == TrackableBehaviour.Status.NO_POSE)
         {
             OnTrackingLost();
+            AudioSource[] sounds = GetComponentsInChildren<AudioSource>();
             sounds[0].Stop();
         }
         else
