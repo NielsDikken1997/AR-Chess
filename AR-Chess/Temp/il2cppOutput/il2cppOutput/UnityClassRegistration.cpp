@@ -185,7 +185,7 @@ class TrailRenderer;
 class VFXRenderer; 
 class Rigidbody; 
 class Rigidbody2D; 
-namespace TextRenderingPrivate { class TextMesh; } 
+namespace TextRenderingPrivate { class TextMesh; } template <> void RegisterUnityClass<TextRenderingPrivate::TextMesh>(const char*);
 class Transform; template <> void RegisterUnityClass<Transform>(const char*);
 namespace UI { class RectTransform; } template <> void RegisterUnityClass<UI::RectTransform>(const char*);
 class Tree; 
@@ -286,7 +286,7 @@ void RegisterAllClasses()
 {
 void RegisterBuiltinTypes();
 RegisterBuiltinTypes();
-	//Total: 72 non stripped classes
+	//Total: 73 non stripped classes
 	//0. Behaviour
 	RegisterUnityClass<Behaviour>("Core");
 	//1. Unity::Component
@@ -425,11 +425,13 @@ RegisterBuiltinTypes();
 	RegisterUnityClass<LightProbes>("Core");
 	//68. LightmapSettings
 	RegisterUnityClass<LightmapSettings>("Core");
-	//69. CapsuleCollider
+	//69. TextRenderingPrivate::TextMesh
+	RegisterUnityClass<TextRenderingPrivate::TextMesh>("TextRendering");
+	//70. CapsuleCollider
 	RegisterUnityClass<CapsuleCollider>("Physics");
-	//70. Light
+	//71. Light
 	RegisterUnityClass<Light>("Core");
-	//71. RenderSettings
+	//72. RenderSettings
 	RegisterUnityClass<RenderSettings>("Core");
 
 }
