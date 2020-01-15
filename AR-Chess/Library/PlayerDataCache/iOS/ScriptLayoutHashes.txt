@@ -1,6 +1,6 @@
 iOS
 PlayerPath?
-/Users/niels/Documents/EIT - HCID/University of Stockholm - KTH/Courses/Mulitimodal Interactions and Interfaces/Group Assignment/AR-Chess Unity/Builds/Test_6
+/Users/yerai/Downloads/Test2
 SceneListBegin?
 Assets/Scenes/SampleScene.unity
 SceneListEnd?
@@ -299,3 +299,7 @@ fe10de86e42ce80dc24cf76ac1c87c2a Vuforia.UnityExtensions.dll:Vuforia.VuforiaConf
 69167579cf7fcbb2676fc1e675963dcd Vuforia.UnityExtensions.dll:Vuforia.VuMarkBehaviour
 fbbf64dcbe0662e3eda1dec45ea8f895 Vuforia.UnityExtensions.dll:Vuforia.WireframeBehaviour
 71bb6a6b6c8f052f948db64c7dd3ca4f Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
+f53c750cfc0def8411ab96ce8db257b2 Assembly-CSharp.dll:.TwoFirst
+2e958affcff73a5b3fbc2fcbd682aa5a Assembly-CSharp.dll:.TwoSecond
+fa1abf48733446424bed2337d82d4abc Assembly-CSharp.dll:.TwoFourth
+efafaa59d2aae35d71b306e3d269f922 Assembly-CSharp.dll:.TwoThird
