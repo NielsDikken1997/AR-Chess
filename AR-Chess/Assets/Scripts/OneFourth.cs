@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class OneFourth : MonoBehaviour
 {
@@ -10,6 +12,9 @@ public class OneFourth : MonoBehaviour
 	public GameObject Queen_2;
 	public GameObject Queen_3;
 	public GameObject win_text;
+    public TextMeshProUGUI Score;
+    public GameObject Score_object;
+    public GameObject Restart;
 
     // Start is called before the first frame update
     void Start()
@@ -40,6 +45,14 @@ public class OneFourth : MonoBehaviour
                 	Queen_3.SetActive(true);
                 	//Show win text
                 	win_text.SetActive(true);
+                    //Show score
+                    float t = Time.time - DefaultTrackableEventHandler.startTime;
+                    string minutes = ((int) t/60).ToString();
+                    string seconds = (t % 60).ToString("f0");
+                    Score.text = minutes + ":" + seconds;
+                    Score_object.SetActive(true);
+                    //Show restart
+                    Restart.SetActive(true);
                     //Hide Positions
                     Positions_2.SetActive(false);
                 }
