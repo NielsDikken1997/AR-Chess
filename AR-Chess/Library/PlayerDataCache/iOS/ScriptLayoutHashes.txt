@@ -1,6 +1,6 @@
 iOS
 PlayerPath?
-/Users/yerai/Downloads/Test2
+/Users/niels/Documents/EIT - HCID/University of Stockholm - KTH/Courses/Mulitimodal Interactions and Interfaces/Group Assignment/AR-Chess Unity/Builds/Test_6
 SceneListBegin?
 Assets/Scenes/SampleScene.unity
 SceneListEnd?
