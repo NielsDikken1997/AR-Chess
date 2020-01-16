@@ -5,10 +5,12 @@ using UnityEngine;
 public class TwoSecond : MonoBehaviour
 {
 	public GameObject Positions_1;
+    public GameObject B_0;
 	public GameObject B_1;
 	public GameObject B_2;
 	public GameObject K_1;
 	public GameObject K_2;
+    public GameObject Queen_0;
 	public GameObject Queen_1;
 	public GameObject Queen_2;
 
@@ -31,6 +33,8 @@ public class TwoSecond : MonoBehaviour
                 GameObject hitObject = rayhit.collider.gameObject;
 
                 if (hitObject.name == "Position_1"){
+                    //Hide vibration
+                    B_0.SetActive(false);
                 	//Hide Rook_1
                 	B_1.SetActive(false);
                 	//Show Rook_2
@@ -43,6 +47,8 @@ public class TwoSecond : MonoBehaviour
                 	Queen_1.SetActive(false);
                 	//Show Queen_2
                 	Queen_2.SetActive(true);
+                    //Show Vibration
+                    Queen_0.SetActive(true);
                     //Hide Positions
                     Positions_1.SetActive(false);
                 }

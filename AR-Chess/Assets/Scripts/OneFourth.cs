@@ -9,6 +9,7 @@ public class OneFourth : MonoBehaviour
 	public GameObject Positions_2;
 	public GameObject Pawn_2;
 	public GameObject Pawn_3;
+    public GameObject Queen_0;
 	public GameObject Queen_2;
 	public GameObject Queen_3;
 	public GameObject win_text;
@@ -40,6 +41,7 @@ public class OneFourth : MonoBehaviour
                 	//Show Pawn_3
                 	Pawn_3.SetActive(true);
                 	//Hide Queen_2
+                    Queen_0.SetActive(false);
                 	Queen_2.SetActive(false);
                 	//Show Queen_3
                 	Queen_3.SetActive(true);

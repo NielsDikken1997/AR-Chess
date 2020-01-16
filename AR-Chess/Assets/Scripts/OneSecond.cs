@@ -5,10 +5,12 @@ using UnityEngine;
 public class OneSecond : MonoBehaviour
 {
 	public GameObject Positions_1;
+    public GameObject Rook_0;
 	public GameObject Rook_1;
 	public GameObject Rook_2;
 	public GameObject Pawn_1;
 	public GameObject Pawn_2;
+    public GameObject Queen_0;
 	public GameObject Queen_1;
 	public GameObject Queen_2;
 
@@ -32,6 +34,7 @@ public class OneSecond : MonoBehaviour
 
                 if (hitObject.name == "Position_1"){
                 	//Hide Rook_1
+                    Rook_0.SetActive(false);
                 	Rook_1.SetActive(false);
                 	//Show Rook_2
                 	Rook_2.SetActive(true);
@@ -43,6 +46,7 @@ public class OneSecond : MonoBehaviour
                 	Queen_1.SetActive(false);
                 	//Show Queen_2
                 	Queen_2.SetActive(true);
+                    Queen_0.SetActive(true);
                     //Hide Positions
                     Positions_1.SetActive(false);
                 }

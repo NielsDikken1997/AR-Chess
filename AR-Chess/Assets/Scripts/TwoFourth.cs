@@ -7,6 +7,7 @@ using TMPro;
 public class TwoFourth : MonoBehaviour
 {
 	public GameObject Positions_2;
+    public GameObject Queen_0;
 	public GameObject Queen_2;
 	public GameObject Queen_3;
 	public GameObject win_text;
@@ -34,6 +35,7 @@ public class TwoFourth : MonoBehaviour
 
                 if (hitObject.name == "Position_2"){
                 	//Hide Queen_2
+                    Queen_0.SetActive(false);
                 	Queen_2.SetActive(false);
                 	//Show Queen_3
                 	Queen_3.SetActive(true);
